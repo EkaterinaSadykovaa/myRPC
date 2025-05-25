@@ -1,0 +1,6 @@
+Package: myrpc-client
+Version: 1.0
+Architecture: amd64
+Maintainer: Your Name <adikova.ekaterina05@gmail.com>
+Description: RPC client for remote command execution
+Depends: libc6 (>= 2.28)
