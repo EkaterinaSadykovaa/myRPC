@@ -16,7 +16,7 @@ $(TARGET): $(SRC)
 
 install:
 	install -D -m 755 myRPC-server $(DESTDIR)/usr/local/bin/myRPC-server
-	mkdir -p $(DESTDIR)/etc/myRPC  # Создаем директорию
+	mkdir -p $(DESTDIR)/etc/myRPC 
 	install -m 644 myRPC.conf $(DESTDIR)/etc/myRPC/
 	install -m 644 users.conf $(DESTDIR)/etc/myRPC/
 	install -D -m 644 ../systemd/myRPC-server.service $(DESTDIR)/etc/systemd/system/myRPC-server.service
